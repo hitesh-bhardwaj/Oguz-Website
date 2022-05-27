@@ -10,8 +10,8 @@ body {
 }
 
 .navbar {
-  margin: 3% 6%;
-  padding: 0;
+  margin: 0;
+  padding: 4% 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,8 +57,8 @@ body {
 .nav-btn {
     display: inline-block;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0%;
+    top: 4%;
 
   }
 
@@ -66,7 +66,8 @@ body {
       display: inline-block;
       width: 50px;
       height: 50px;
-      padding: 13px;
+      padding: 0;
+
     }
 
 .navbar > .nav-btn label:hover, .navbar  #nav-check:checked ~ .nav-btn > label {
@@ -76,7 +77,7 @@ body {
         .navbar > .nav-btn > label > span {
             display: block;
             width: 25px;
-            height: 10px;
+            height: 7px;
             border-top: 2px solid #eee;
           }
           .navbar > .navbar-right ul {
@@ -89,11 +90,15 @@ body {
             overflow-y: hidden;
             top: 50px;
             left: 0px;
+            z-index: 1;
+            padding: 0;
+            margin-top: 5%;
           }
           .navbar > .navbar-right > ul > li {
             text-align: center;
             display: block;
             width: 100%;
+            padding: 10px 0;
           }
           .navbar > #nav-check:not(:checked) ~ .navbar-right ul {
             height: 0px;
@@ -102,14 +107,15 @@ body {
 
           .navbar > #nav-check:checked ~ .navbar-right ul {
 
-          height: calc(20vh);
-          width: calc(10vh);
+          height:40%;
+          width:100%;
           overflow-y: auto;
-              z-index: 1;
+
+              padding: 0;
         }
 
           .navbar-right ul li a{
-            font-size: 1rem;
+            font-size: 20px;
           }
 
           .navbar{
@@ -117,12 +123,12 @@ body {
           }
 
           .navbar-left img{
-            width: 10%;
+            width: 15%;
             margin-right: 5%;
             padding: 0;
           }
           .navbar-left a{
-            font-size: 12px;
+            font-size: 15px;
             margin: 0;
           }
         }
@@ -279,6 +285,10 @@ button{
     font-size: 15px;
   }
 
+.clients2 > ul{
+  padding: 0;
+}
+
   .clients2 > ul > li{
     display: block;
     font-size: 20px;
@@ -347,24 +357,24 @@ button{
 /* resume */
 .resume-h {
   font-size: 60px;
-  padding-left: 250px;
+  margin: 0 12.5%
 }
 
 .work-exp {
+  margin: 0 12.5%;
   font-size: 25px;
   text-align: left;
   display: flex;
-  justify-content: center;
 }
 
 .edu {
-  margin: 0 275px;
+  margin: 0 12.5%;
 }
 
 .skills {
   margin-top: 30px;
   font-size: 23px;
-  margin-left: 250px;
+  margin-left: 12.5%;
   text-align: left;
 }
 
@@ -379,12 +389,44 @@ th, td {
 .tools {
   margin-top: 30px;
   font-size: 23px;
-  margin-left: 250px;
+  margin:0 12.5%;
   text-align: left;
   margin-bottom: 350px;
 }
 
+@media screen and (max-width:767px){
+  .resume-h{
+    font-size: 3rem;
+  }
+  .work-exp{
+    font-size: 20px;
+    display: block;
+  }
 
+  .work-exp h2{
+    margin-top: 10%;
+  }
+ .work-exp h3{
+   margin-top: 0;
+ }
+
+ .edu{
+   margin: 20% 0 20% 0;
+ }
+
+ .skills{
+    font-size: 20px;
+ }
+
+ .tools{
+   font-size: 20px;
+   margin-bottom: 40%;
+ }
+
+th, td{
+  width: 50%;
+}
+}
 /* Works */
 
 
@@ -437,9 +479,10 @@ th, td {
   }
 
   #workmedia{
+    width: 100%;
     display: block;
     float: none;
-    margin: 10% 7%;
+    margin: 10% 0;
     padding: 0;
     font-size:15px;
     position: relative;
@@ -447,7 +490,9 @@ th, td {
   }
 
   #workmedia > img {
-    width: 45%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 
   }
 
@@ -543,21 +588,49 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  footer{
+  footer{display: block;
     margin: 0;
+    padding: 0;
+    text-align: center;
+
 
   }
 
-  .footer-left > ul > li{
-
-    margin: 0;
-    padding: 0;
-    display: inline;
+  .footer-left ul li {
+    margin-right: 0;
+    padding:10px 15px;
+    color: #cccccc;
   }
-  .footer-right {
 
-    display: flex;
-    padding: 0;
-    align-items: center;
+.footer-img{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-img img{
+  filter: brightness(1.5);
+  text-align: center;
+  width: 25px;
+  padding: 10% 0%;
+}
+
+.footer-right{
+  justify-content: center;
+}
+
+.footer-right a {
+  padding: 0 5px;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.footer-right img{
+
+  padding: 0 5px;
+  width: 18px;
 }
 }
