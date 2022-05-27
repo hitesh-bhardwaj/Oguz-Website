@@ -57,7 +57,7 @@ body {
 .nav-btn {
     display: inline-block;
     position: absolute;
-    right: 0%;
+    right: 0;
     top: 4%;
 
   }
@@ -85,11 +85,11 @@ body {
             display: block;
             width: 100%;
             background-color: black;
-            height: 0px;
+            height: 0;
             transition: all 0.3s ease-in;
             overflow-y: hidden;
             top: 50px;
-            left: 0px;
+            left: 0;
             z-index: 1;
             padding: 0;
             margin-top: 5%;
@@ -101,7 +101,7 @@ body {
             padding: 10px 0;
           }
           .navbar > #nav-check:not(:checked) ~ .navbar-right ul {
-            height: 0px;
+            height: 0;
 
           }
 
@@ -265,10 +265,7 @@ button{
 @media screen and (max-width:767px){
   .clients{
     padding: 0;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5% auto;
   }
 
   .clients > img{
@@ -480,7 +477,7 @@ width: 38%;
 
 
 @media screen and (max-width:767px){
-  .work {
+  .work{
     display: block;
     font-size: 1rem;
     margin: 10% 5%;
@@ -619,7 +616,7 @@ footer {
   filter: brightness(1.5);
   text-align: center;
   width: 25px;
-  padding: 10% 0%;
+  padding: 10% 0;
 }
 
 .footer-right{
