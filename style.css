@@ -389,7 +389,7 @@ th, td {
 
 
 .work {
-  margin-left: 240px;
+  margin-left: 12.5%;
   font-size: 30px;
 }
 
@@ -428,29 +428,49 @@ th, td {
   float: right;
 }
 
-@media screen {
+@media screen and (max-width:767px){
+  .work {
+    display: block;
+    font-size: 1rem;
+    margin: 10% 5%;
+    padding: 0;
+  }
 
+  #workmedia{
+    display: block;
+    float: none;
+    margin: 10% 7%;
+    padding: 0;
+    font-size:15px;
+    position: relative;
+
+  }
+
+  #workmedia > img {
+    width: 45%;
+
+  }
+
+  .empty{
+    display: none;
+  }
 }
-
-
-
 /* Empty */
-
-
 
 .empty {
   overflow: hidden;
   height: 350px;
 }
 
-
 /* contact */
 
 .contact {
   font-size: 25px;
-  margin: 200px 600px;
+  margin: 20% 30%;
   text-align: left;
-  clear: both;
+  clear: left;
+  clear: right;
+
 }
 
 .contact a {
@@ -466,9 +486,18 @@ th, td {
   color: #4b7be3;
 }
 
-/* .emoji{
-  position: relative;
-} */
+@media screen and (max-width: 767px){
+  .contact{
+    font-size: 10px;
+    margin: 20% 10%;
+  }
+
+  .contact a{
+    font-size: 13px;
+  }
+
+}
+
 /* footer section */
 hr {
   width: 60%;
@@ -493,7 +522,6 @@ footer {
 
 .footer-img a {
   color: #636e7d;
-  transition: color 0.2s;
 }
 
 .footer-img a :hover {
@@ -512,4 +540,24 @@ footer {
   text-decoration: none;
   color: white;
   font-size: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  footer{
+    margin: 0;
+
+  }
+
+  .footer-left > ul > li{
+
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  .footer-right {
+
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
 }
