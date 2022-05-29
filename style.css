@@ -484,34 +484,41 @@ justify-content: center;
     font-size: 1rem;
     margin: 10% 5%;
     padding: 0;
+}
   }
 
-  #workmedia{
-    width: 100%;
+
+@media screen and (max-width:1600px){
+
+  .work1{
     display: block;
-    float: none;
-    margin: 10% 0;
-    padding: 0;
-    font-size:15px;
-    position: relative;
-
   }
 
-  #workmedia > img {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+#workmedia{
+  text-align: center;
+  width: 100%;
 }
 
- .work1 p {
-    width: 100%;
-    color: #636e7d;
+#workmedia > div > img{
+  width: 50%;
+}
 
+}
+
+@media screen and (max-width:767px){
+  .work1{
+    display: block;
   }
 
-  }
+#workmedia{
+  text-align: center;
+  width: 100%;
+}
 
-
+#workmedia > div > img{
+  width: 100%;
+}
+}
 /* contact */
 
 .contact {
