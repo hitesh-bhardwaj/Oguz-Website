@@ -430,8 +430,11 @@ th, td{
 
 
 .work {
-  margin-left: 12.5%;
   font-size: 30px;
+}
+
+.work h1{
+  margin:3% 8%;
 }
 
 .work1{
@@ -439,91 +442,71 @@ th, td{
   height: 100%;
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+justify-content: space-around;
 }
+
+#workmedia{
+  width: 40%;
+}
+
 
 .work1 h2{
   width: 100%;
 }
 
 .work1 p {
-  width: 95%;
+  width: 100%;
   color: #636e7d;
 }
 
-#workmedia{
-  width: 38%;
-}
+
 
 .work-content2{
   margin-top: 30%;
 }
 
-/* .work-content1 {
-  width: 50%;
 
+#wimg img{
+  width: 100%;
 }
-
-.work-content2 {
-  width: 50%;
-}
-
-.work-content3 {
-  width: 50%;
-}
-
-.work-content4 {
-  width: 50%;
-} */
-
 
 
 @media screen and (max-width:767px){
   .work{
     display: block;
-    font-size: 1rem;
+    font-size: 15px;
     margin: 10% 5%;
     padding: 0;
 }
-  }
-
-
-@media screen and (max-width:1600px){
-
-  .work1{
-    display: block;
-  }
+.work1{
+  display: block;
+}
 
 #workmedia{
-  text-align: center;
-  width: 100%;
+text-align: center;
+width: 100%;
 }
 
 #workmedia > div > img{
-  width: 50%;
+width: 100%;
+}
+
+#wimg{
+  margin-top: 10%;
+}
+
+.work-content2{
+margin-top: 0%;
 }
 
 }
 
-@media screen and (max-width:767px){
-  .work1{
-    display: block;
-  }
 
-#workmedia{
-  text-align: center;
-  width: 100%;
-}
-
-#workmedia > div > img{
-  width: 100%;
-}
-}
 /* contact */
 
 .contact {
   font-size: 25px;
-  margin: 20% 30%;
+  margin: 20% 25%;
   text-align: left;
   clear: left;
   clear: right;
