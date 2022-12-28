@@ -335,18 +335,12 @@ barba.init({
                 pageTransitionIn();
                 $(window).scrollTop(0);
                 heroTransition();
-                gsap.from(".work h1", {
+                gsap.from(".reveal", {
                     y: 50,
                     opacity: 0,
                     ease: "power1.out",
-                    duration: 2
-                });
-                gsap.from(".work1", {
-                    y: 50,
-                    opacity: 0,
-                    ease: "power1.out",
-                    stagger: 0.1,
-                    duration: 2
+                    duration: 1,
+                    stagger: .3
                 });
             },
         }
