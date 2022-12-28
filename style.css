@@ -1,3 +1,10 @@
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -185,7 +192,7 @@ button {
 button:hover {
   background-color: white;
   color: black;
-  transition: 0.2s;
+  transition: .7s;
 }
 
 @media screen and (max-width:767px)
@@ -221,10 +228,16 @@ button{
 
 /* clients section */
 .clients {
+  animation: fadeIn;
   margin-top: 2%;
   margin-bottom: 4%;
   width: 100%;
   text-align: center;
+}
+
+.clients:hover{
+  animation: fadeIn;
+  animation-duration: 2s;
 }
 
 .clients img {
