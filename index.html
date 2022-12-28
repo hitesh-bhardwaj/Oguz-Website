@@ -1,275 +1,439 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Oguz Design</title>
+    <script src="https://unpkg.com/@barba/core"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <title>Oguz Design</title>
-</head>
 
-<body>
-  <header>
+  <body id="main-scrollbar" data-scrollbar data-barba="wrapper">
 
-    <nav class="navbar animate__animated animate__fadeIn">
-      <input type="checkbox" id="nav-check">
+    <!-- Pre-Loader -->
+    <div id="loading">
+    </div>    
+
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <!-- <div class="loading-container">
+      <div class="loading-screen">
+      </div>
+    </div> -->
+
+    <!-- <div class="loader">
+        <div class="page-transition">
+            <div class="loading-wait">
+                <h1>Loading, please wait..</h1>
+            </div>
+        </div>
+    </div> -->
+
+    <div>
+
+    <main data-barba="container" data-barba-namespace="home">
+
+    <header>
+    <nav class="navbar">
       <div class="navbar-left">
-        <img class="navbar-left-img" src="https://img.icons8.com/ios/40/ffffff/filled-message.png" />
-        <a class="mail" href="" class="logo">hi@oguz.design</a>
+        <a class="nav-left-a" href="mailto:bhardwajhitesh09@gmail.com"><span class="material-symbols-outlined">mail</span>hi@oguz.design</a>
       </div>
-
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-
-      <div class="navbar-right ">
+      <div class="navbar-right">
         <ul>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#resumes">Resume</a></li>
-          <li><a href="#services">Services</a> </li>
-          <li><a href="#contacts">Contact</a></li>
+          <li><a class="nav-right-a" href="works.html">Works</a></li>
+          <li><a class="nav-right-a" href="#resumes">Resume</a></li>
+          <li><a class="nav-right-a" href="#services">Services</a></li>
+          <li><a class="nav-right-a" href="index.html">Contact</a></li>
+          <li><button id="lightMode-js" onclick="myFunction()" class="dark" type="button">Light Mode</button></li>
         </ul>
       </div>
     </nav>
+    </header>
+    <div class="herop">
+      <img id="hero-img-pro" class="dark" src="Images\propic.png" alt="Profile Picture">
+      <h2 class="hero-h2">Hi, I'm Oguz</h2>
+      <h1 class="hero-h1">Building digital <br>products, brands, and <br>experience.</h1>
+      <p class="hero-p">a <b>Product Designer</b> and <b>Visual Developer</b> in SF.<br>
+          I specialize in UI/UX Design, Responsive Web Design,
+          <br />and Visual Development.</p>
+          <a href="#contacts"><button id="hero-button-dark" class="dark" href="#contacts" type="button" name="button">CONNECT WITH ME</button></a>
+    </div>
 
-  </header>
+    <!-- Clients Section -->
 
-
-
-  <!-- Hero Section -->
-
-  <div class="hero animate__animated animate__fadeInUp animate__delay-.5s">
-    <img class="hero-img" src="Images\propic.png" alt="Profile Picture">
-    <h2 class="hero-h2">Hi, I'm Oguz</h2>
-    <h1 class="hero-h1">Building digital products, brands, and experience.</h1>
-    <p class="hero-p">a <b>Product Designer</b> and <b>Visual Developer</b> in SF.
-      I specialize in UI/UX Design, Responsive Web Design, and Visual Development.
-    </p>
-    <a href="#contacts"><button href="#contacts" type="button" name="button">CONNECT WITH ME</button></a>
-  </div>
-
-  <!-- Clients Section -->
   <div>
     <div class="clients">
       <img class="clients-c1" src="Images\C1.jpg" alt="">
       <img class="clients-c2" src="Images\C2.jpg" alt="">
-      <img class="clients-c3" src="Images\C3.jpg" alt="">
-    </div>
-    <div class="clients2">
-      <h1>Clients</h1>
+      <img class="clients-c3"src="Images\C3.jpg" alt="">
+  </div>
+  <div class="clients2">
+        <h1>Clients</h1>
       <ul>
         <li>Google</li>
         <li>Uber</li>
         <li>Stack</li>
         <li>Eveland</li>
       </ul>
-    </div>
   </div>
+</div>
 
-  <!-- Services -->
-  <div class="service-main" id="services">
-    <h1 class="">Services</h1>
+<!-- New-Section-Hero -->
+
+<section class="hero">
+  <svg id="enigma-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1020 300" xml:space="preserve">
+      <style type="text/css">
+          .sh {
+
+              filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
+          }
+
+          .st01 {
+              fill: url(#SVGID_1_);
+          }
+
+          .st11 {
+              fill: url(#SVGID_2_);
+          }
+
+          .st21 {
+              fill: url(#SVGID_3_);
+          }
+
+          .st31 {
+              fill: url(#SVGID_4_);
+          }
+
+          .st41 {
+              fill: url(#SVGID_5_);
+          }
+
+          .st51 {
+              fill: url(#SVGID_6_);
+          }
+
+          .st61 {
+              fill: url(#SVGID_7_);
+          }
+
+          .st71 {
+              fill: url(#SVGID_8_);
+          }
+
+          .st81 {
+              fill: url(#SVGID_9_);
+          }
+
+          .st91 {
+              fill: url(#SVGID_10_);
+          }
+      </style>
+      <g>
+          <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="74.1925" y1="-3.0795" x2="74.1925" y2="208.1779">
+              <stop offset="0" style="stop-color:#848484"></stop>
+              <stop offset="1" style="stop-color:#EAEAEA"></stop>
+          </linearGradient>
+          <path class="st11 sh" id="e" d="M10,60.8v178.5h126.4l0-65.1H110v50.6H23.2l13.2-3.4v-59.6l-13.2-3.4l113.2,0V60.8H10z M110,143.7l-86.8,0    l13.2-3.4V78.7l-13.2-3.4H110L110,143.7z"></path>
+          
+          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="244.0582" y1="-3.0795" x2="244.0582" y2="208.1779">
+              <stop offset="0" style="stop-color:#848484"></stop>
+              <stop offset="1" style="stop-color:#EAEAEA"></stop>
+          </linearGradient>
+          <polygon class="st01 sh" id="n" xmlns="http://www.w3.org/2000/svg" points="180.6,60.7 180.6,239.2 246.4,239.2 246.4,224.7 193.8,224.6 207,221.3 207,78.8 193.6,75.3     293.8,75.3 280.6,78.7 280.6,239.2 307,239.2 307,60.7"></polygon>
+          
+          <g id="i">
+          <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="389.345" y1="-3.0795" x2="389.345" y2="208.1779">
+                  <stop offset="0" style="stop-color:#848484"></stop>
+                  <stop offset="1" style="stop-color:#EAEAEA"></stop>
+          </linearGradient>
+          <rect xmlns="http://www.w3.org/2000/svg" x="376.1" y="16.8" class="st21 sh" width="26.4" height="26.4"></rect>
+          <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="372.2424" y1="-3.0795" x2="372.2424" y2="208.1779">
+                  <stop offset="0" style="stop-color:#848484"></stop>
+                  <stop offset="1" style="stop-color:#EAEAEA"></stop>
+          </linearGradient>
+
+          <polygon class="st31 sh" xmlns="http://www.w3.org/2000/svg" points="339.5,60.7 339.4,75.3 389.5,75.3 376.3,78.7 376.3,221.3 389.5,224.6 339.5,224.6 339.4,239.2    402.7,239.2 402.7,60.7  "></polygon>
+          </g>
+          
+          <g id="g">
+              <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="510.7233" y1="-3.0795" x2="510.7233" y2="208.1779">
+                  <stop offset="0" style="stop-color:#848484"></stop>
+                  <stop offset="1" style="stop-color:#EAEAEA"></stop>
+              </linearGradient>
+              <rect class="st81 sh" xmlns="http://www.w3.org/2000/svg" x="497.2" y="136.7" width="26.4" height="26.4"></rect>
+              <linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="509.993" y1="-3.0795" x2="509.993" y2="208.1779">
+                  <stop offset="0" style="stop-color:#848484"></stop>
+                  <stop offset="1" style="stop-color:#EAEAEA"></stop>
+              </linearGradient>
+              <path class="st91 sh" xmlns="http://www.w3.org/2000/svg" d="M446.8,239.2l112.9,0l-12.8,3.3l0,22.7l13.2,3.4H460l13.4-3.4V254h-26.6l0,29.2h126.4V60.7l-112.8,0l12.8-3.3   V34.7l-12.8-3.3H560l-13.2,3.4v11.3h26.4V16.8H446.9L446.8,239.2z M460,75.3h100l-13.2,3.4l0,142.6l13.1,3.4l-99.9-0.1l13.2-3.4   V78.7L460,75.3z"></path>
+          </g>
+          
+          <g id="m">
+              <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="775.9418" y1="-3.0795" x2="775.9418" y2="208.1779">
+                  <stop offset="0" style="stop-color:#848484"></stop>
+                  <stop offset="1" style="stop-color:#EAEAEA"></stop>
+              </linearGradient>
+
+              <polygon xmlns="http://www.w3.org/2000/svg" class="st51 sh" points="773.6,75.3 826.2,75.3 813,78.7 813,221.2 826.4,224.7 726.2,224.7 739.4,221.3 739.4,60.8 713,60.8    713,239.2 839.4,239.2 839.4,60.8 773.6,60.8  "></polygon>
+              <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="630.6549" y1="-3.0795" x2="630.6549" y2="208.1779">
+                  <stop offset="0" style="stop-color:#848484"></stop>
+                  <stop offset="1" style="stop-color:#EAEAEA"></stop>
+              </linearGradient>
+              <rect class="st61 sh" xmlns="http://www.w3.org/2000/svg" x="617.5" y="256.7" width="26.4" height="26.4"></rect>
+              <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="647.7574" y1="-3.0795" x2="647.7574" y2="208.1779">
+                  <stop offset="0" style="stop-color:#848484"></stop>
+                  <stop offset="1" style="stop-color:#EAEAEA"></stop>
+              </linearGradient>
+              <polygon xmlns="http://www.w3.org/2000/svg" class="st71 sh" points="680.6,60.8 617.3,60.8 617.3,239.2 680.5,239.2 680.6,224.7 630.5,224.7 643.7,221.3 643.7,78.7    630.5,75.3 680.5,75.3  "></polygon>
+          </g>
+          
+          <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="945.8075" y1="-3.0795" x2="945.8075" y2="208.1779">
+              <stop offset="0" style="stop-color:#848484"></stop>
+              <stop offset="1" style="stop-color:#EAEAEA"></stop>
+          </linearGradient>
+          <path class="st41 sh" id="a" d="M883.6,60.8l0,65.1H910V75.3h86.8l-13.2,3.4v59.6l13.2,3.4l-113.2,0v97.5H1010V60.8H883.6z M996.8,224.6H910   l0-68.3l86.8,0l-13.2,3.4v61.6L996.8,224.6z"></path>
+      </g>
+  </svg>
+  <h3 class="st01 main-line">Digital Experience Design Agency For Ambitious Brands</h3>
+
+  <div class="second-scroll">
+      <div class="main-concept">
+          <span class="concept-1">From</span>
+          <span class="concept-2">Concept</span>
+          <span class="concept-3">To</span>
+          <span class="concept-4">Conversion</span>
+      </div>
   </div>
-  <div class="service">
-    <div class="service-1">
-      <img src="https://img.icons8.com/emoji/96/000000/bullseye.png" />
+  <!-- ----------------------- -->
+  <div class="change-1">
+      <span class="change-2">We're Changing The Face Of Web</span>
+      <div class="lapi">
+          <video width="73%" height="73%" autoplay="" loop="" muted="" playsinline="">
+              <source src="/Images/a.mp4" type="video/mp4">
+          </video>    
+      </div>
+  </div>
+  <!-- ----------------------- -->
+  <div class="split-div">
+      <div class="split-1">
+          <div class="video-left">
+              <video width="100%" height="100%" autoplay loop muted>
+                  <source src="/Images/left.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div class="split-text">
+              <h1>Do you think we're the right<br>
+                  partners to bring your idea to life<br>
+                  and take your brand<br>
+                  to the Next Level? 🚀</h1>
+          </div>
+          <div class="video-right">
+              <video width="100%" height="100%" autoplay loop muted>
+                  <source src="/Images/right.mp4" type="video/mp4">
+              </video>
+          </div>
+      </div>           
+  </div>
+</section>
+
+
+<!-- Services -->
+<div class="service-main" id="services">
+  <h1 class="">Services</h1>
+</div>
+<div class="service">
+    <div class="service-1 dark">
+      <img src="https://img.icons8.com/emoji/96/000000/bullseye.png"/>
       <h3>Strategy & Direction</h3>
       <p>Defining the problem, identifying
         the scope and finally, organising
         the design roadmap to bring out
         100% of every project.
-      </p>
+    </p>
     </div>
 
-    <div class="service-2">
-      <img src="https://img.icons8.com/emoji/96/000000/writing-hand.png" />
+    <div class="service-2 dark">
+      <img src="https://img.icons8.com/emoji/96/000000/writing-hand.png"/>
       <h3>Design UI/UX</h3>
       <p>Websites, application or other
         design related tasks. I love tackling
-        digital problems and help fix them.</p>
+      digital problems and help fix them.</p>
     </div>
 
-    <div class="service-3">
-      <img src="https://img.icons8.com/emoji/96/000000/mobile-phone.png" />
+    <div class="service-3 dark">
+      <img src="https://img.icons8.com/emoji/96/000000/mobile-phone.png"/>
       <h3>Mobile App</h3>
       <p>It's 2020, we should really step up
-        our mobile game a bit more, right?
-        Open to tackling new mobile projects.</p>
+      our mobile game a bit more, right?
+    Open to tackling new mobile projects.</p>
     </div>
   </div>
 
   <!-- Resume -->
-  <h1 class="resume-h" id="resumes">Resume</h1>
+    <h1 class="resume-h" id="resumes">Resume</h1>
 
-  <div class="work-exp">
-    <div>
-      <h2>Work Experience</h2><br>
-      <h3>Uber</h3>
-      <p>Product Designer</p>
-      <p>August 2018 - December 2019</p>
-      <br>
-      <h3>Apple</h3>
-      <p>Product Design</p>
-      <p>December 2019 - Current</p>
-    </div>
+    <div class="work-exp">
+      <div>
+        <h2>Work Experience</h2><br>
+        <h3>Uber</h3>
+        <p>Product Designer</p>
+        <p>August 2018 - December 2019</p>
+<br>
+        <h3>Apple</h3>
+        <p>Product Design</p>
+        <p>December 2019 - Current</p>
+      </div>
 
-    <div class="edu">
-      <h2>Education</h2><br>
-      <h3>SUNY Polytechnique Institute</h3>
-      <p>MS Information Design & Technology</p>
-      <p>2016-2017</p>
-      <br>
-      <h3>Florida Gulf Coast University</h3>
-      <p>BA Psychology</p>
-      <p>2014 - 2015</p>
-    </div>
+      <div class="edu">
+        <h2>Education</h2><br>
+        <h3>SUNY Polytechnique Institute</h3>
+        <p>MS Information Design & Technology</p>
+        <p>2016-2017</p>
+<br>
+        <h3>Florida Gulf Coast University</h3>
+        <p>BA Psychology</p>
+        <p>2014 - 2015</p>
+      </div>
   </div>
 
   <table class="skills">
-    <tr>
-      <th>
-        <h2>Skills</h2>
-      </th>
-    </tr>
-    <tr>
-      <th>
-        <h3>Design</h3>
-      </th>
-      <th>
-        <h3>Development</h3>
-      </th>
-    </tr>
-    <tr>
-      <td>Product Design</td>
-      <td>Visual Development</td>
-    </tr>
-    <tr>
-      <td>UI/UX Design</td>
-      <td>Webflow Development</td>
-    <tr>
-      <td>Visual Design</td>
-      <td>Front-End Development</td>
-    </tr>
-    <tr>
-      <td>Wireframing</td>
-      <td>HTML5/CSS3</td>
-    </tr>
-    <tr>
-      <td>Protyping</td>
-      <td>No-Code Solutions</td>
-    </tr>
-  </table>
+  <tr>
+    <th><h2>Skills</h2></th>
+  </tr>
+  <tr>
+    <th><h3>Design</h3></th>
+    <th><h3>Development</h3></th>
+  </tr>
+  <tr>
+    <td>Product Design</td>
+    <td>Visual Development</td>
+  </tr>
+  <tr>
+    <td>UI/UX Design</td>
+    <td>Webflow Development</td>
+  <tr>
+    <td>Visual Design</td>
+    <td>Front-End Development</td>
+  </tr>
+  <tr>
+    <td>Wireframing</td>
+    <td>HTML5/CSS3</td>
+  </tr>
+  <tr>
+    <td>Protyping</td>
+    <td>No-Code Solutions</td>
+  </tr>
+</table>
 
-  <table class="tools">
-    <tr>
-      <th>
-        <h2>Tools</h2>
-      </th>
-    </tr>
-    <tr>
-      <td>Figma</td>
-      <td>Whimsical</td>
-    </tr>
-    <tr>
-      <td>Webflow</td>
-      <td>Adobe XD</td>
-    <tr>
-      <td>Notion</td>
-      <td>After Effects</td>
-    </tr>
-    <tr>
-      <td>Bravo Studio</td>
-      <td>Photoshop</td>
-    </tr>
-    <tr>
-      <td>Sketch</td>
-      <td>Visual Studio Code</td>
-    </tr>
-  </table>
+<table class="tools">
+<tr>
+  <th><h2>Tools</h2></th>
+</tr>
+<tr>
+  <td>Figma</td>
+  <td>Whimsical</td>
+</tr>
+<tr>
+  <td>Webflow</td>
+  <td>Adobe XD</td>
+<tr>
+  <td>Notion</td>
+  <td>After Effects</td>
+</tr>
+<tr>
+  <td>Bravo Studio</td>
+  <td>Photoshop</td>
+</tr>
+<tr>
+  <td>Sketch</td>
+  <td>Visual Studio Code</td>
+</tr>
+</table>
 
 
-  <!-- Works -->
-  <div class="work" id="works">
-    <h1>The work I do,<br>
+<!-- Works -->
+<!-- <div class="work" id="works">
+  <h1>The work I do,<br>
       and business I help.</h1>
-
-  <div class="work1">
-    <div id="workmedia">
-      <div class="work-content1" id="wimg">
-      <img src="Images\W1.png" alt="">
-      <h2>Jobriver</h2>
-      <p>Jobriver is a Polish employment platform. It often helps developers
-        to find a job that suits them easily by filtering!</p>
-    </div>
-    <div class="work-content3" id="wimg">
-      <img src="Images\W3.png" alt="">
-      <h2>Vencortex</h2>
-      <p>We helped Vencortex in redesigning a whole new customer
-        experience.</p>
-    </div>
-    </div>
-
-<div id="workmedia">
-  <div class="work-content2" id="wimg">
-    <img src="Images\W2.png" alt="">
-    <h2>Blaze</h2>
-    <p>This template is made for Flowbase and can only be purchased from
-      there. Build a beautiful site for your technology business today
-      using the Blaze Template!</p>
-  </div>
-
-
-
-  <div class="work-content4" id="wimg">
-    <img src="Images\W4.png" alt="">
-    <h2>Vencortex</h2>
-    <p>We helped Vencortex in redesigning a whole new customer
-      experience.</p>
-  </div>
 </div>
+<div class="work1">
+
+<div class="work-content1">
+  <img src="Images\W1.png" alt="">
+  <h2>Jobriver</h2>
+  <p>Jobriver is a Polish employment platform. It often helps developers
+  to find a job that suits them easily by filtering!</p>
 </div>
+<div class="work-content2">
+  <img src="Images\W2.png" alt="">
+  <h2>Blaze</h2>
+  <p>This template is made for Flowbase and can only be purchased from
+  there. Build a beautiful site for your technology business today
+using the Blaze Template!</p>
+</div>
+
+<div class="work-content3">
+  <img src="Images\W3.png" alt="">
+  <h2>Vencortex</h2>
+  <p>We helped Vencortex in redesigning a whole new customer
+  experience.</p>
+</div>
+
+<div class="work-content4">
+  <img src="Images\W4.png" alt="">
+  <h2>Vencortex</h2>
+  <p>We helped Vencortex in redesigning a whole new customer
+  experience.</p>
+</div>
+</div> -->
+
+<!-- <img class="emoji" src="Images\emoji.png" alt=""> -->
+<div class="empty">
 
 </div>
 
-  <!-- </div>
-
-  <img class="emoji" src="Images\emoji.png" alt="">
-
-  </div> -->
-
-  <!-- Contact -->
-  <div class="contact" id="contacts">
-    <h1>Let me know if you want to talk about a potential
-      collaboration. I'm available for freelance work.</h1>
-    <a href="#">
-      <h1>Let's design your app</h1>
-    </a>
-  </div>
+<!-- Contact -->
+<div class="contact" id="contacts">
+  <h1>Let me know if you want to talk about a potential
+  collaboration. I'm available for freelance work.</h1>
+  <a href="#"><h1>Let's design your app</h1></a>
+</div>
 
 
-  <!-- Footer Section -->
+<!-- Footer Section -->
   <hr>
   <footer>
     <div class="footer-left">
       <ul class="footer-img">
-        <li><a href="#"><img src="https://img.icons8.com/material-outlined/35/95A5A6/facebook-new.png" /></a></li>
-        <li><a href="#"><img src="https://img.icons8.com/material-outlined/35/95A5A6/instagram-new--v1.png" /></a></li>
-        <li><a href="#"><img src="https://img.icons8.com/material-outlined/35/95A5A6/twitter.png" /></a></li>
-        <li><a href="#"><img src="https://img.icons8.com/material-outlined/35/95A5A6/linkedin--v1.png" /></a></li>
+        <li><a href="#"><img src="https://img.icons8.com/material-outlined/35/95A5A6/facebook-new.png"/></a></li>
+        <li><a href="#"><img src="https://img.icons8.com/material-outlined/35/95A5A6/instagram-new--v1.png"/></a></li>
+        <li><a href="#"><img src="https://img.icons8.com/material-outlined/35/95A5A6/twitter.png"/></a></li>
+        <li><a href="#"><img src="https://img.icons8.com/material-outlined/35/95A5A6/linkedin--v1.png"/></a></li>
       </ul>
     </div>
     <div class="footer-right">
-      <img src="https://img.icons8.com/ios/40/ffffff/filled-message.png" />
+      <img src="https://img.icons8.com/ios/40/ffffff/filled-message.png"/>
       <a class="mail" href="" class="logo">hi@oguz.design</a>
     </div>
   </footer>
 
-</body>
+</main>
+</div>
 
+<!-- Javascript Files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+<script src="script.js"></script>
+
+  </body>
 </html>
