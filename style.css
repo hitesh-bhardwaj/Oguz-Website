@@ -249,7 +249,8 @@ section{
 
 .material-symbols-outlined{
   font-size: 40px !important;
-  padding: 0;
+  padding: 0px;
+  padding-right: 15px;
 }
 
 .navbar {
@@ -262,6 +263,7 @@ section{
 
 .navbar-left{
   padding: 0 50px;
+  display: flex;
   align-items: center;
 }
 
