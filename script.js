@@ -1,7 +1,55 @@
 gsap.registerPlugin(ScrollTrigger);
 
+var bodyScrollbar = window.Scrollbar;
 
-let bodyScrollBar = Scrollbar.init(document.body, { damping: 0.05, delegateTo: document, alwaysShowTracks: true, speed: 2 });
+function MobilePlugin() {
+  bodyScrollbar.ScrollbarPlugin.apply(this, arguments);
+}
+
+MobilePlugin.prototype = Object.create(bodyScrollbar.ScrollbarPlugin.prototype);
+
+MobilePlugin.prototype.transformDelta = function(delta, fromEvent) {
+  if (fromEvent.type !== 'touchend') {
+    return delta;
+  }
+
+  return {
+    x: delta.x * this.options.speed,
+    y: delta.y * this.options.speed,
+  };
+};
+
+MobilePlugin.pluginName = 'filterEvent';
+MobilePlugin.defaultOptions = {
+  speed: 0.5,
+};
+
+// Overscroll plugin
+bodyScrollbar.use(OverscrollPlugin);
+
+// Mobile plugin
+bodyScrollbar.use(MobilePlugin);
+
+var ScrollbarOptions = {
+    damping: 0.04,
+    thumbMinSize: 5,
+    renderByPixel: true,
+    alwaysShowTracks: true,
+    continuousScrolling: true,
+    plugins: {
+      overscroll: {
+        effect: 'bounce',
+        damping: 0.2,
+        maxOverscroll: 150
+      },
+      mobile: {
+        speed: 0.5
+      }
+    },
+  };
+
+
+let bodyScrollBar = Scrollbar.init(document.body, ScrollbarOptions);
  
 bodyScrollBar.setPosition(0, 0);
 bodyScrollBar.track.xAxis.element.remove();
@@ -16,7 +64,6 @@ ScrollTrigger.scrollerProxy(document.body, {
 });
 
 bodyScrollBar.addListener(ScrollTrigger.update);
-
 
 $( document ).ready(function() {
 
@@ -242,37 +289,15 @@ $( document ).ready(function() {
     });    
   }
 
-//   function workTransition() {
-
-//     workTrans.from(".work h1", {
-//         y: -20,
-//         opacity: 0,
-//         ease: "power1.out",
-//         duration: 1
-//     })
-
-//     workTrans.from(".work1", {
-//         y: -20,
-//         opacity: 0,
-//         ease: "power1.out",
-//         stagger: 0.1,
-//         duration: 1
-//     })
-
-//   }
-
 document.getElementById("lightMode-js").addEventListener("click", function() {
     if(document.getElementById("lightMode-js").innerText == "Light Mode"){
         document.getElementById("lightMode-js").innerHTML = "Dark Mode"
-        // document.body.querySelectorAll(".dark").classList.toggle("light")
+        
     } else {
         document.getElementById("lightMode-js").innerHTML = "Light Mode"
-        // document.body.querySelectorAll(".light").classList.toggle("dark")
+       
     }
 });
-
-// for (i = 0; i < document.querySelectorAll(".light").length; i++) {
-//     document.querySelectorAll(".light").className = "dark";
 
 function myFunction() {
     let element = document.body;

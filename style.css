@@ -5,7 +5,7 @@ body{
   color: white;
   font-family: 'Poppins';
 }
-html, body, section.horizontal {
+html, body{
   overflow: hidden;
 }
 
@@ -15,11 +15,6 @@ body#main-scrollbar{
   overflow: auto;
   margin: 0;
 }
-
-/* main{
-  overflow-x: hidden;
-  height: 100vh;
-} */
 
 #loading{
   background: #000 url(/Images/loader.gif) no-repeat center center;
